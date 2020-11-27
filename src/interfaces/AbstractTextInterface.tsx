@@ -1,5 +1,5 @@
 export default interface AbstractTextInterface {
-  readonly color?: string;
+  readonly elementColor?: string;
   readonly fontSize?: string;
   readonly lineHeight?: string;
   readonly fontWeight?: string;

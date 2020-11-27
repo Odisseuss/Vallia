@@ -17,11 +17,12 @@ interface BackgroundProps {
     | "space-between"
     | "space-evenly";
   readonly alignItems?: "center" | "start" | "end" | "stretch";
+  readonly withSVG?: boolean;
 }
 let BackgroundContainer = styled.div<BackgroundProps>`
   height: 100vh;
   width: 100vw;
-  background: ${(props) => props.backgroundColor || colors.navy_blue};
+  background-color: ${(props) => props.backgroundColor || colors.navy_blue};
   ${(props) =>
     props?.flex
       ? `display: flex;\nflex-direction: ${
@@ -45,7 +46,10 @@ const Hero: React.FunctionComponent<BackgroundProps> = (props) => {
   );
   let svgBackground = `url('data:image/svg+xml,${svgString}')`;
   return (
-    <BackgroundContainer style={{ backgroundImage: svgBackground }} {...props}>
+    <BackgroundContainer
+      style={props.withSVG ? { backgroundImage: svgBackground } : undefined}
+      {...props}
+    >
       {props.children}
     </BackgroundContainer>
   );

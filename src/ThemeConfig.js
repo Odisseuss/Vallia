@@ -25,4 +25,37 @@ let shadows = {
   elevation_4: `drop-shadow(0px 0px 1px #0D0D0D), drop-shadow(0px 8px 16px ${colors.shadow});`,
   elevation_5: `drop-shadow(0px 0px 1px #0D0D0D), drop-shadow(0px 16px 25px ${colors.shadow});`,
 };
-export { colors, shadows };
+
+let animations = {
+  button_outline_move_up_and_fill: {
+    y: "-20%",
+    transition: { duration: 0.2, ease: "easeOut" },
+    backgroundColor: colors.primary,
+    color: colors.navy_blue,
+  },
+  button_filled_move_up: {
+    y: "-20%",
+    transition: { duration: 0.2, ease: "easeOut" },
+  },
+};
+
+const size = {
+  mobileS: "320px",
+  mobileM: "375px",
+  mobileL: "425px",
+  tablet: "768px",
+  laptop: "1024px",
+  laptopL: "1440px",
+  desktop: "2560px",
+};
+const device = {
+  mobileS: `(min-width: ${size.mobileS})`,
+  mobileM: `(min-width: ${size.mobileM})`,
+  mobileL: `(min-width: ${size.mobileL})`,
+  tablet: `(min-width: ${size.tablet})`,
+  laptop: `(min-width: ${size.laptop})`,
+  laptopL: `(min-width: ${size.laptopL})`,
+  desktop: `(min-width: ${size.desktop})`,
+  desktopL: `(min-width: ${size.desktop})`,
+};
+export { colors, shadows, animations, device };

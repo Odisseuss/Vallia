@@ -6,10 +6,11 @@ import AbstractTextInterface from "../interfaces/AbstractTextInterface";
 interface BrandingProps extends AbstractTextInterface {}
 
 let Branding = styled.h1<BrandingProps>`
-    color: ${(props) => props.color ?? colors.primary};
+    color: ${(props) => props.elementColor ?? colors.primary};
     font-size: ${(props) => props.fontSize ?? "7.8rem"};
     line-height: ${(props) => props.lineHeight ?? "7.8rem"};
     font-weight: ${(props) => props.fontWeight ?? "800"};
+    width: ${(props) => props.width};
     margin: ${(props) => props.margin ?? "0"};
     text-transform: ${(props) => (props.uppercase ? "uppercase" : "")};
     text-align: ${(props) => props.textAlign ?? "left"};

@@ -6,7 +6,7 @@ import { colors } from "../ThemeConfig";
 interface ParagraphProps extends AbstractTextInterface {}
 
 let StyledParagraph = styled.p<ParagraphProps>`
-  color: ${(props) => props.color || colors.darker_grey};
+  color: ${(props) => props.elementColor || colors.darker_grey};
   width: ${(props) => props.width || "55%"};
   font-size: ${(props) => props.fontSize || "1.5rem"};
   font-weight: ${(props) => props.fontWeight || ""};
