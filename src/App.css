@@ -6,12 +6,12 @@ html {
   font-size: 100%;
 }
 
-/* @media screen and (max-width: 1350px) {
+@media screen and (max-width: 768px) {
   html {
     font-size: 14px;
   }
 }
-@media screen and (max-width: 1150px) {
+/* @media screen and (max-width: 1150px) {
   html {
     font-size: 12px;
   }
