@@ -37,6 +37,10 @@ let animations = {
     y: "-20%",
     transition: { duration: 0.2, ease: "easeOut" },
   },
+  progress_bar_fill: (completionPercentage) => ({
+    full_width: { width: `${completionPercentage}%` },
+    no_width: { width: "0%" },
+  }),
 };
 
 const size = {
