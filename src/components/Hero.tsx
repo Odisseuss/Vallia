@@ -18,10 +18,12 @@ interface BackgroundProps {
     | "space-evenly";
   readonly alignItems?: "center" | "start" | "end" | "stretch";
   readonly withSVG?: boolean;
+  readonly width?: string;
+  readonly height?: string;
 }
 let BackgroundContainer = styled.div<BackgroundProps>`
-  height: 100vh;
-  width: 100vw;
+  height: ${(props) => props.height || "100vh"};
+  width: ${(props) => props.width || "100vw"};
   background-color: ${(props) => props.backgroundColor || colors.navy_blue};
   ${(props) =>
     props?.flex
