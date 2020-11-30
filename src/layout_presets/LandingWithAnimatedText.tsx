@@ -11,6 +11,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Skills from "../components/Skills";
+import MySkills from "./MySkills";
+import Timeline from "../components/Timeline";
 
 function LandingWithAnimatedText() {
   React.useEffect(() => {
@@ -70,26 +72,8 @@ function LandingWithAnimatedText() {
           </Col>
         </Row>
       </Container>
-      <div style={{ height: 1000 }}></div>
-      <Skills
-        skills={[
-          {
-            completionPercentage: 30,
-            fillerColor: "#64FF8F",
-            skillName: "HTML",
-          },
-          {
-            completionPercentage: 70,
-            fillerColor: "#64FF8F",
-            skillName: "CSS",
-          },
-          {
-            completionPercentage: 90,
-            fillerColor: "#64FF8F",
-            skillName: "JavaScript",
-          },
-        ]}
-      />
+      <MySkills />
+      <Timeline />
     </Hero>
   );
 }
