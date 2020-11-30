@@ -1,5 +1,9 @@
 import * as React from "react";
 import ProgressBar from "./ProgressBar";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+
 interface SkillProps {
   skillName: string;
   completionPercentage: number;
@@ -32,10 +36,25 @@ const Skills: React.FunctionComponent<SkillsProps> = (props) => {
       }}
     />
   ));
+  var barPairs: Array<Array<JSX.Element>> = [];
+  for (var i = 0, j = 0; i < ProgressBars.length; i++) {
+    if (i >= 2 && i % 2 === 0) j++;
+    barPairs[j] = barPairs[j] || [];
+    barPairs[j].push(ProgressBars[i]);
+  }
   return (
-    <div style={{ width: "80%", height: "100%", margin: "50px auto" }}>
-      {ProgressBars}
-    </div>
+    <Container className="py-5">
+      {barPairs.map(([bar_1, bar_2], index) => (
+        <Row key={index}>
+          <Col sm={12} md={6}>
+            {bar_1}
+          </Col>
+          <Col sm={12} md={6}>
+            {bar_2}
+          </Col>
+        </Row>
+      ))}
+    </Container>
   );
 };
 

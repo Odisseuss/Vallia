@@ -52,7 +52,7 @@ let SkillText = styled.span<SkillTextProps>`
 `;
 let SkillContainer = styled.div`
   height: 100%;
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
