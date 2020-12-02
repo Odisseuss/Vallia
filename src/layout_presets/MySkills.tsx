@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Skills from "../components/Skills";
 import BigText from "../components/BigText";
+import { colors } from "../ThemeConfig";
 interface MySkillsProps {}
 
 const MySkills: React.FunctionComponent<MySkillsProps> = () => {
@@ -27,17 +28,17 @@ const MySkills: React.FunctionComponent<MySkillsProps> = () => {
         skills={[
           {
             completionPercentage: 30,
-            fillerColor: "#64FF8F",
+            fillerColor: colors.primary,
             skillName: "HTML",
           },
           {
             completionPercentage: 70,
-            fillerColor: "#64FF8F",
+            fillerColor: colors.primary,
             skillName: "CSS",
           },
           {
             completionPercentage: 90,
-            fillerColor: "#64FF8F",
+            fillerColor: colors.primary,
             skillName: "JavaScript",
           },
         ]}
