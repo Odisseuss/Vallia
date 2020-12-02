@@ -10,6 +10,9 @@ import "react-vertical-timeline-component/style.min.css";
 import Button from "./Button";
 import { colors } from "../ThemeConfig";
 import Paragraph from "./Paragraph";
+import BigText from "./BigText";
+import Container from "react-bootstrap/Container";
+import styles from "./Timeline.module.css";
 let timelineElements = [
   {
     id: 1,
@@ -76,9 +79,16 @@ export interface TimelineProps {}
 
 const Timeline: React.FunctionComponent<TimelineProps> = () => {
   return (
-    <div>
-      <h1>Timeline</h1>
-      <VerticalTimeline>
+    <Container className="my-5">
+      <BigText
+        fontSize={"4rem"}
+        elementColor={"#E6E6E6"}
+        fontWeight={"800"}
+        textAlign={"center"}
+      >
+        Timeline
+      </BigText>
+      <VerticalTimeline className={styles.different_color_timeline_bar}>
         {timelineElements.map((el) => {
           let isDesktopIcon = el.icon === "work";
           let showButton =
@@ -92,21 +102,36 @@ const Timeline: React.FunctionComponent<TimelineProps> = () => {
               date={el.date}
               contentStyle={{ backgroundColor: "#172A45", color: "#E6E6E6" }}
               iconStyle={{
-                background: "#64FF8F",
+                background: colors.primary,
                 boxShadow:
                   "0 0 0 4px #E6E6E6, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05)",
               }}
               icon={isDesktopIcon ? <DesktopIcon /> : <SchoolIcon />}
             >
-              <h3 className="vertical-timeline-element-title">{el.title}</h3>
-              <h5 className="vertical-timeline-element-subtitle">
+              <BigText
+                fontSize={"1.2rem"}
+                elementColor={"#E6E6E6"}
+                lineHeight={"1.4rem"}
+              >
+                {el.title}
+              </BigText>
+
+              <BigText
+                fontSize={"1rem"}
+                elementColor={"#E6E6E6"}
+                lineHeight={"1.2rem"}
+                fontWeight={"400"}
+              >
                 {el.location}
-              </h5>
-              <Paragraph>{el.description}</Paragraph>
+              </BigText>
+              <Paragraph width="100%" margin="1.5rem 0 !important">
+                {el.description}
+              </Paragraph>
               <Button
                 padding="0.25rem 1rem"
                 borderRadius="5px"
                 fontColor={colors.navy_blue}
+                block
               >
                 Contact Me
               </Button>
@@ -114,7 +139,7 @@ const Timeline: React.FunctionComponent<TimelineProps> = () => {
           );
         })}
       </VerticalTimeline>
-    </div>
+    </Container>
   );
 };
 
