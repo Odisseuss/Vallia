@@ -7,6 +7,7 @@ import { HTMLMotionProps, motion } from "framer-motion/";
 interface ButtonProps extends AbstractTextInterface, HTMLMotionProps<"button"> {
   readonly outline?: boolean;
   readonly borderRadius?: string;
+  readonly block?: boolean;
 }
 let StyledButton = styled(motion.button)<ButtonProps>`
   border-radius: ${(props) => props.borderRadius || "0.625rem"};
@@ -20,6 +21,7 @@ let StyledButton = styled(motion.button)<ButtonProps>`
     props.outline ? "transparent" : props.elementColor || colors.primary};
   border: 3px solid ${(props) => props.elementColor || colors.primary};
   text-transform: ${(props) => (props.uppercase ? "uppercase" : "")};
+  display: ${(props) => (props.block ? "block" : "inline-block")};
 `;
 
 const Button: React.FunctionComponent<ButtonProps> = (props) => {

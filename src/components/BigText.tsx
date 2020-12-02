@@ -12,6 +12,7 @@ let Branding = styled.h1<BrandingProps>`
     font-weight: ${(props) => props.fontWeight ?? "800"};
     width: ${(props) => props.width};
     margin: ${(props) => props.margin ?? "0"};
+    padding: ${(props) => props.padding ?? "0"};
     text-transform: ${(props) => (props.uppercase ? "uppercase" : "")};
     text-align: ${(props) => props.textAlign ?? "left"};
   }
