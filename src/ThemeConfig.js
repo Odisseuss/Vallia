@@ -33,6 +33,15 @@ let animations = {
     backgroundColor: colors.primary,
     color: colors.navy_blue,
   },
+  button_outline_fill: {
+    transition: { duration: 0.2, ease: "easeOut" },
+    backgroundColor: colors.primary,
+    color: colors.navy_blue,
+  },
+  move_up: {
+    y: "-5%",
+    transition: { duration: 0.2, ease: "easeOut" },
+  },
   button_filled_move_up: {
     y: "-20%",
     transition: { duration: 0.2, ease: "easeOut" },
