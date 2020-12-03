@@ -8,7 +8,7 @@ import { ReactComponent as DesktopIcon } from "../svg/Desktop.svg";
 import { ReactComponent as SchoolIcon } from "../svg/School.svg";
 import "react-vertical-timeline-component/style.min.css";
 import Button from "./Button";
-import { colors } from "../ThemeConfig";
+import { animations, colors } from "../ThemeConfig";
 import Paragraph from "./Paragraph";
 import BigText from "./BigText";
 import Container from "react-bootstrap/Container";
@@ -128,9 +128,11 @@ const Timeline: React.FunctionComponent<TimelineProps> = () => {
                 {el.description}
               </Paragraph>
               <Button
+                outline
                 padding="0.25rem 1rem"
                 borderRadius="5px"
-                fontColor={colors.navy_blue}
+                fontColor={colors.primary}
+                whileHover={animations.button_outline_fill}
                 block
               >
                 Contact Me
