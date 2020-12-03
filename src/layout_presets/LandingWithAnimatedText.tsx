@@ -19,6 +19,10 @@ import Testimonial from "../components/Testimonial";
 import AboutPictureText from "../components/AboutPictureText";
 import GetInTouchWithButtons from "../components/GetInTouchWithButtons";
 import GetInTouchWithOneButton from "../components/GetInTouchWithOneButton";
+import GetInTouchWithForm from "../components/GetInTouchWithForm";
+import GetInTouchWithFormAndPicture from "../components/GetInTouchWithFormAndPicture";
+import Gallery from "../components/Gallery";
+import TeamGallery from "../components/TeamGallery";
 
 function LandingWithAnimatedText() {
   React.useEffect(() => {
@@ -84,8 +88,12 @@ function LandingWithAnimatedText() {
       <Testimonial />
       <AboutPictureText />
       <OurClients />
-      {/* <GetInTouchWithButtons /> */}
+      {/* <GetInTouchWithButtons />
       <GetInTouchWithOneButton />
+      <GetInTouchWithForm /> */}
+      <GetInTouchWithFormAndPicture />
+      <Gallery />
+      <TeamGallery />
     </Hero>
   );
 }

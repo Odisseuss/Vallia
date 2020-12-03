@@ -29,7 +29,7 @@ const AboutPictureText: React.FunctionComponent = () => {
       }}
     >
       <Row>
-        <Col lg={5} md={12} className={"mb-md-5"}>
+        <Col lg={5} md={12} className={"mb-5"}>
           <StyledImage src={ChevyImg} alt="" />
         </Col>
         <Col lg={7} md={12}>
