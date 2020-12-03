@@ -16,6 +16,7 @@ let StyledButton = styled(motion.button)<ButtonProps>`
   font-family: inherit;
   font-weight: ${(props) => props.fontWeight || "600"};
   padding: ${(props) => props.padding || "1rem 4rem"};
+  margin: ${(props) => props.margin || ""};
   color: ${(props) => props.fontColor || colors.primary};
   background-color: ${(props) =>
     props.outline ? "transparent" : props.elementColor || colors.primary};
