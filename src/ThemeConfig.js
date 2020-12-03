@@ -42,6 +42,10 @@ let animations = {
     y: "-5%",
     transition: { duration: 0.2, ease: "easeOut" },
   },
+  move_up_small_distance: {
+    y: "-2.5%",
+    transition: { duration: 0.2, ease: "easeOut" },
+  },
   button_filled_move_up: {
     y: "-20%",
     transition: { duration: 0.2, ease: "easeOut" },
