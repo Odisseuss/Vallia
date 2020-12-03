@@ -10,26 +10,27 @@ import CustomContainer from "./CustomContainer";
 import Paragraph from "./Paragraph";
 import { colors } from "../ThemeConfig";
 
+let StyledImage = styled.img`
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  transform: translate(0px, -30%);
+  @media screen and (max-width: 1200px) {
+    transform: translate(0px, 0px);
+  }
+`;
+
 const AboutPictureText: React.FunctionComponent = () => {
   return (
     <Container
       style={{
-        marginTop: "10rem",
-        marginBottom: "10rem",
+        marginTop: "20rem",
+        marginBottom: "2rem",
       }}
     >
       <Row>
-        <Col lg={5} md={12}>
-          <img
-            src={ChevyImg}
-            alt=""
-            style={{
-              width: "100%",
-              objectFit: "cover",
-              borderRadius: 15,
-              translate: "x: 100px",
-            }}
-          />
+        <Col lg={5} md={12} className={"mb-md-5"}>
+          <StyledImage src={ChevyImg} alt="" />
         </Col>
         <Col lg={7} md={12}>
           <CustomContainer>
@@ -70,9 +71,7 @@ const AboutPictureText: React.FunctionComponent = () => {
               >
                 Shaman tumeric hell of kickstarter, four dollar toast small
                 batch cornhole health goth narwhal organic migas cred blog
-                seitan cold-pressed. Mumblecore tattooed live-edge mustache
-                vexillologist gentrify distillery leggings meh forage plaid
-                marfa yuccie food truck edison bulb.
+                seitan cold-pressed.
               </Paragraph>
             </Col>
             <Col lg={6} md={12} sm={12} xs={12}>
@@ -91,9 +90,7 @@ const AboutPictureText: React.FunctionComponent = () => {
               >
                 Shaman tumeric hell of kickstarter, four dollar toast small
                 batch cornhole health goth narwhal organic migas cred blog
-                seitan cold-pressed. Mumblecore tattooed live-edge mustache
-                vexillologist gentrify distillery leggings meh forage plaid
-                marfa yuccie food truck edison bulb.
+                seitan cold-pressed.
               </Paragraph>
             </Col>
           </Row>
