@@ -11,8 +11,14 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Skills from "../components/Skills";
+import OurClients from "../components/OurClients";
 import MySkills from "./MySkills";
 import Timeline from "../components/Timeline";
+import AboutCards from "../components/AboutCards";
+import Testimonial from "../components/Testimonial";
+import AboutPictureText from "../components/AboutPictureText";
+import GetInTouchWithButtons from "../components/GetInTouchWithButtons";
+import GetInTouchWithOneButton from "../components/GetInTouchWithOneButton";
 
 function LandingWithAnimatedText() {
   React.useEffect(() => {
@@ -30,7 +36,7 @@ function LandingWithAnimatedText() {
     <Hero flex width="100%" height="100%">
       <Container className="py-5">
         <Row className="align-items-center py-lg-5">
-          <Col lg={8} className={"mb-5 mb-lg-0 py-lg-5"}>
+          <Col lg={7} className={"mb-5 mb-lg-0 py-lg-5"}>
             <CustomContainer width="100%" flex>
               <Paragraph fontSize="1.1rem" margin="0">
                 Hello. I am Victor Smith
@@ -58,7 +64,7 @@ function LandingWithAnimatedText() {
               </Button>
             </CustomContainer>
           </Col>
-          <Col lg={4} md={8} sm={9} className="py-lg-5">
+          <Col lg={5} md={8} sm={9} className="py-lg-5">
             <img
               style={{
                 width: "100%",
@@ -74,6 +80,12 @@ function LandingWithAnimatedText() {
       </Container>
       <MySkills />
       <Timeline />
+      <AboutCards />
+      <Testimonial />
+      <AboutPictureText />
+      <OurClients />
+      {/* <GetInTouchWithButtons /> */}
+      <GetInTouchWithOneButton />
     </Hero>
   );
 }
