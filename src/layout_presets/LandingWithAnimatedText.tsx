@@ -11,18 +11,18 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Skills from "../components/Skills";
-import OurClients from "../components/OurClients";
+import OurClients from "./OurClients";
 import MySkills from "./MySkills";
 import Timeline from "../components/Timeline";
-import AboutCards from "../components/AboutCards";
+import AboutCards from "./AboutCards";
 import Testimonial from "../components/Testimonial";
-import AboutPictureText from "../components/AboutPictureText";
-import GetInTouchWithButtons from "../components/GetInTouchWithButtons";
-import GetInTouchWithOneButton from "../components/GetInTouchWithOneButton";
-import GetInTouchWithForm from "../components/GetInTouchWithForm";
-import GetInTouchWithFormAndPicture from "../components/GetInTouchWithFormAndPicture";
-import Gallery from "../components/Gallery";
-import TeamGallery from "../components/TeamGallery";
+import AboutPictureText from "./AboutPictureText";
+import GetInTouchWithButtons from "./GetInTouchWithButtons";
+import GetInTouchWithOneButton from "./GetInTouchWithOneButton";
+import GetInTouchWithForm from "./GetInTouchWithForm";
+import GetInTouchWithFormAndPicture from "./GetInTouchWithFormAndPicture";
+import Gallery from "./Gallery";
+import TeamGallery from "./TeamGallery";
 
 function LandingWithAnimatedText() {
   React.useEffect(() => {

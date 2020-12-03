@@ -2,12 +2,12 @@ import * as React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Card from "./Card";
+import Card from "../components/Card";
 import { colors } from "../ThemeConfig";
 import { ReactComponent as CokeIcon } from "../svg/conk.svg";
-import BigText from "./BigText";
-import Paragraph from "./Paragraph";
-import CustomContainer from "./CustomContainer";
+import BigText from "../components/BigText";
+import Paragraph from "../components/Paragraph";
+import CustomContainer from "../components/CustomContainer";
 
 let logos = [
   <CokeIcon fill={colors.lighter_grey} width="6rem" height="6rem" />,

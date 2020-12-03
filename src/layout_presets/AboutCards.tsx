@@ -2,7 +2,7 @@ import * as React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Card from "./Card";
+import Card from "../components/Card";
 import { colors } from "../ThemeConfig";
 import { ReactComponent as BeenHereIcon } from "../svg/BeenHere.svg";
 import { ReactComponent as ChartIcon } from "../svg/Chart.svg";
@@ -10,8 +10,8 @@ import { ReactComponent as CloudIcon } from "../svg/Cloud.svg";
 import { ReactComponent as FacebookIcon } from "../svg/Facebook.svg";
 import { ReactComponent as MoneyIcon } from "../svg/Money.svg";
 import { ReactComponent as WhatshotIcon } from "../svg/Whatshot.svg";
-import BigText from "./BigText";
-import Paragraph from "./Paragraph";
+import BigText from "../components/BigText";
+import Paragraph from "../components/Paragraph";
 
 let cardsData = [
   {

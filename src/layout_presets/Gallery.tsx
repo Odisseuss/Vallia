@@ -2,12 +2,12 @@ import * as React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Card from "./Card";
+import Card from "../components/Card";
 import { colors } from "../ThemeConfig";
 import Vearlinq from "../img/VearLinq.webp";
 import Perdoo from "../img/Perdoo.webp";
-import GalleryCard from "./GalleryCard";
-import BigText from "./BigText";
+import GalleryCard from "../components/GalleryCard";
+import BigText from "../components/BigText";
 
 let cardsData = [
   {

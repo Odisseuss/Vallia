@@ -3,11 +3,11 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import styled from "styled-components";
-import Card from "./Card";
+import Card from "../components/Card";
 import ChevyImg from "../img/Chevy.jpg";
-import BigText from "./BigText";
-import CustomContainer from "./CustomContainer";
-import Paragraph from "./Paragraph";
+import BigText from "../components/BigText";
+import CustomContainer from "../components/CustomContainer";
+import Paragraph from "../components/Paragraph";
 import { colors } from "../ThemeConfig";
 
 let StyledImage = styled.img`

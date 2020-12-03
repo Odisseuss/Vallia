@@ -1,8 +1,8 @@
 import * as React from "react";
 import styled from "styled-components";
-import BigText from "./BigText";
-import CustomContainer from "./CustomContainer";
-import Paragraph from "./Paragraph";
+import BigText from "../components/BigText";
+import CustomContainer from "../components/CustomContainer";
+import Paragraph from "../components/Paragraph";
 import { ReactComponent as MailIcon } from "../svg/Mail.svg";
 import { ReactComponent as PhoneIcon } from "../svg/Phone.svg";
 import { animations, colors } from "../ThemeConfig";

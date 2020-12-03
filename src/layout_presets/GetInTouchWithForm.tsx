@@ -1,13 +1,13 @@
 import * as React from "react";
 import styled from "styled-components";
-import BigText from "./BigText";
-import CustomContainer from "./CustomContainer";
-import Paragraph from "./Paragraph";
+import BigText from "../components/BigText";
+import CustomContainer from "../components/CustomContainer";
+import Paragraph from "../components/Paragraph";
 import { colors } from "../ThemeConfig";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
-import Form from "./Form";
+import Form from "../components/Form";
 
 export interface GetInTouchWithFormProps {}
 

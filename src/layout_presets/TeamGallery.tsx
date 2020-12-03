@@ -5,8 +5,8 @@ import Col from "react-bootstrap/Col";
 import Annie from "../img/Annie.jpg";
 import Mike from "../img/Mike.jpg";
 import Ken from "../img/Ken.jpg";
-import TeamCard from "./TeamCard";
-import BigText from "./BigText";
+import TeamCard from "../components/TeamCard";
+import BigText from "../components/BigText";
 import { colors } from "../ThemeConfig";
 
 let cardsData = [
