@@ -39,7 +39,7 @@ const TeamGallery: React.FunctionComponent = () => {
     </Col>
   ));
   return (
-    <Container style={{ marginBottom: 200 }}>
+    <Container id="team" style={{ marginBottom: 200 }}>
       <Row>
         <Col>
           <BigText

@@ -1,7 +1,8 @@
 import * as React from "react";
 import styled from "styled-components";
 import { colors } from "../ThemeConfig";
-
+import { HashLink } from "react-router-hash-link";
+import { HashRouter as Router } from "react-router-dom";
 export interface NavbarProps {}
 
 let StyledHeader = styled.header`
@@ -96,15 +97,23 @@ const Navbar: React.FunctionComponent<NavbarProps> = () => {
       </Logo>
       <nav>
         <NavContainer>
-          <li>
-            <a href="#">Test</a>
-          </li>
-          <li>
-            <a href="#">Test</a>
-          </li>
-          <li>
-            <a href="#">Test</a>
-          </li>
+          <Router>
+            <li>
+              <HashLink smooth to="#team">
+                Team
+              </HashLink>
+            </li>
+            <li>
+              <HashLink smooth to="#team">
+                Test
+              </HashLink>
+            </li>
+            <li>
+              <HashLink smooth to="#team">
+                Test
+              </HashLink>
+            </li>
+          </Router>
         </NavContainer>
       </nav>
       <CallToAction href="#">Contact</CallToAction>
