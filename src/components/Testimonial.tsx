@@ -1,6 +1,5 @@
 import * as React from "react";
 import Container from "react-bootstrap/Container";
-
 import BigText from "./BigText";
 import Paragraph from "./Paragraph";
 import { colors } from "../ThemeConfig";
