@@ -5,17 +5,24 @@ import BigText from "./BigText";
 import CustomContainer from "./CustomContainer";
 import Paragraph from "./Paragraph";
 
-let StyledImage = styled.img`
-  height: 600px;
-  width: 100%;
-  border-radius: 10px;
-  object-fit: cover;
+let StyledImage = styled.img<TeamCardImageProps>`
+  height: ${(props) => props.height ?? "600px"};
+  width: ${(props) => props.width ?? "100%"};
+  border-radius: ${(props) => props.borderRadius ?? "10px"};
+  object-fit: ${(props) => props.objectFit ?? "cover"};
 `;
+interface TeamCardImageProps {
+  readonly height?: string;
+  readonly width?: string;
+  readonly borderRadius?: string;
+  readonly objectFit?: string;
+}
 interface TeamCardProps {
   readonly description: string;
   readonly title: string;
   readonly image: string;
   readonly titleInset?: boolean;
+  readonly imageProps?: TeamCardImageProps;
 }
 
 const TeamCard: React.FunctionComponent<TeamCardProps> = (props) => {
@@ -55,7 +62,7 @@ const TeamCard: React.FunctionComponent<TeamCardProps> = (props) => {
             </Paragraph>
           </CustomContainer>
 
-          <StyledImage src={props.image} />
+          <StyledImage {...props.imageProps} src={props.image} />
         </CustomContainer>
       </CustomContainer>
     );
