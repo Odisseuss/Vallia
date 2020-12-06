@@ -1,14 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
-import BigText from "./BigText";
-import CustomContainer from "./CustomContainer";
-import Paragraph from "./Paragraph";
 import { animations, colors } from "../ThemeConfig";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/esm/Row";
-import Col from "react-bootstrap/esm/Col";
 import { useFormik } from "formik";
-import PhilipImage from "../img/Phillip.jpg";
 import Button from "./Button";
 
 interface InputProps {
