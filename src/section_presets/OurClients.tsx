@@ -35,7 +35,7 @@ const OurClients: React.FunctionComponent = () => {
   ));
 
   return (
-    <Container style={{ marginBottom: "3rem" }}>
+    <Container style={{ marginBottom: "3rem", marginTop: "15rem" }}>
       <Row>
         <Col>
           <BigText

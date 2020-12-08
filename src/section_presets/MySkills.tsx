@@ -10,7 +10,7 @@ interface MySkillsProps {}
 const MySkills: React.FunctionComponent<MySkillsProps> = () => {
   return (
     <React.Fragment>
-      <Container className="my-5">
+      <Container style={{ marginTop: "10rem" }}>
         <Row className="mt-5">
           <Col>
             <BigText
@@ -30,6 +30,11 @@ const MySkills: React.FunctionComponent<MySkillsProps> = () => {
             completionPercentage: 30,
             fillerColor: colors.primary,
             skillName: "HTML",
+          },
+          {
+            completionPercentage: 100,
+            fillerColor: colors.primary,
+            skillName: "React",
           },
           {
             completionPercentage: 70,

@@ -19,15 +19,16 @@ let StyledImage = styled.img`
     transform: translate(0px, 0px);
   }
 `;
-
+let StyledContainer = styled(Container)`
+  margin-top: 20rem;
+  margin-bottom: 2rem;
+  @media screen and (max-width: 1200px) {
+    margin-top: 6rem;
+  }
+`;
 const AboutPictureText: React.FunctionComponent = () => {
   return (
-    <Container
-      style={{
-        marginTop: "20rem",
-        marginBottom: "2rem",
-      }}
-    >
+    <StyledContainer>
       <Row>
         <Col lg={5} md={12} className={"mb-5"}>
           <StyledImage src={ChevyImg} alt="" />
@@ -96,7 +97,7 @@ const AboutPictureText: React.FunctionComponent = () => {
           </Row>
         </Col>
       </Row>
-    </Container>
+    </StyledContainer>
   );
 };
 

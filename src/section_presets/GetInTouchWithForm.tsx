@@ -15,7 +15,7 @@ const GetInTouchWithForm: React.FunctionComponent<GetInTouchWithFormProps> = (
   props
 ) => {
   return (
-    <Container>
+    <Container style={{ marginTop: "10rem" }}>
       <Row>
         <Col md={6} xs={12} className="mb-4">
           <CustomContainer

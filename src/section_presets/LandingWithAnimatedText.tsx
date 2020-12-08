@@ -38,7 +38,7 @@ function LandingWithAnimatedText() {
   }, []);
   return (
     <Hero flex width="100%" height="100%">
-      <Container className="py-5">
+      <Container style={{ paddingTop: "10rem", paddingBottom: "5rem" }}>
         <Row className="align-items-center py-lg-5">
           <Col lg={7} className={"mb-5 mb-lg-0 py-lg-5"}>
             <CustomContainer width="100%" flex>
@@ -82,18 +82,6 @@ function LandingWithAnimatedText() {
           </Col>
         </Row>
       </Container>
-      <MySkills />
-      <Timeline />
-      <AboutCards />
-      <Testimonial />
-      <AboutPictureText />
-      <OurClients />
-      {/* <GetInTouchWithButtons />
-      <GetInTouchWithOneButton />
-      <GetInTouchWithForm /> */}
-      <GetInTouchWithFormAndPicture />
-      <Gallery />
-      <TeamGallery />
     </Hero>
   );
 }

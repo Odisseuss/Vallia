@@ -69,7 +69,7 @@ const AboutCards: React.FunctionComponent = () => {
     </Col>
   ));
   return (
-    <Container>
+    <Container style={{ marginTop: "10rem" }}>
       <Row>
         <Col>
           <BigText

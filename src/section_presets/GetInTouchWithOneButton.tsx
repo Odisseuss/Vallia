@@ -23,6 +23,7 @@ const GetInTouchWithOneButton: React.FunctionComponent<GetInTouchWithOneButtonPr
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
+      margin="20rem 0 15rem 0"
     >
       <BigText fontSize="3rem" fontColor={colors.lightest_grey}>
         Get In Touch
