@@ -20,6 +20,8 @@ interface BackgroundProps {
   readonly withSVG?: boolean;
   readonly width?: string;
   readonly height?: string;
+  readonly backgroundImage?: string;
+  readonly filter?: string;
 }
 let BackgroundContainer = styled.div<BackgroundProps>`
   height: ${(props) => props.height || "100vh"};
@@ -35,6 +37,7 @@ let BackgroundContainer = styled.div<BackgroundProps>`
       : ""}
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: url('${(props) => props.backgroundImage ?? ""}');
 }
 `;
 
