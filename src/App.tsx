@@ -1,15 +1,15 @@
 import * as React from "react";
 import "./App.css";
-import LandingWithSVGBackground from "./layout_presets/LandingWithSVGBackground";
-import LandingWithAnimatedText from "./layout_presets/LandingWithAnimatedText";
+import LandingWithAnimatedText from "./section_presets/LandingWithAnimatedText";
 import Navbar from "./components/Navbar";
+import FullStackDeveloperPortfolio from "./demos/FullStackDeveloperPortfolio";
+import SaaSCompany from "./demos/SaaSCompany";
 
 function App() {
   return (
     <div>
-      {/* <LandingWithSVGBackground /> */}
-      <Navbar />
-      <LandingWithAnimatedText />
+      {/* <FullStackDeveloperPortfolio /> */}
+      <SaaSCompany />
     </div>
   );
 }
