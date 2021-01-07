@@ -1,5 +1,11 @@
 # Vallia - WIP
 
+---------------------------------------------------------------
+---------------------------------------------------------------
+# TODO - Refactor everything using Styled System and Theme UI
+---------------------------------------------------------------
+---------------------------------------------------------------
+
 Documentation is not complete for the moment.
 
 Vallia is a Template/UI Kit that can be used for Personal Portfolios/Creative Agency websites. It contains custom components that can be easily configured and extended.
