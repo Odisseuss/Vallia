@@ -54,6 +54,7 @@
     "@types/react-router-hash-link": "^1.2.1",
     "@types/react-vertical-timeline-component": "^3.0.0",
     "@types/styled-system": "^5.1.10",
+    "@types/theme-ui": "^0.3.7",
     "typedoc": "^0.20.13"
   }
 }
